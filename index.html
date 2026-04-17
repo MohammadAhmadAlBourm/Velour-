@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Velouré — Wear the Essence of Luxury</title>
+    <title>فيلوريه — ارتدِ عبق الفخامة</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@200;300;400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@200;300;400;500&family=Tajawal:wght@200;300;400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -18,44 +17,54 @@
 
     <!-- NAV -->
     <nav class="nav">
-        <a href="#hero" class="nav-brand">Velour<em>é</em></a>
+        <a href="#hero" class="nav-brand" data-ar="فيلور<em>يه</em>" data-en="Velour<em>é</em>">فيلور<em>يه</em></a>
         <ul class="nav-links">
-            <li><a href="#about">Brand</a></li>
-            <li><a href="#collection">Collection</a></li>
-            <li><a href="#why">Why Us</a></li>
-            <li><a href="#testimonials">Voices</a></li>
+            <li><a href="#about" data-ar="العلامة" data-en="Brand">العلامة</a></li>
+            <li><a href="#collection" data-ar="المجموعة" data-en="Collection">المجموعة</a></li>
+            <li><a href="#why" data-ar="لماذا نحن" data-en="Why Us">لماذا نحن</a></li>
+            <li><a href="#testimonials" data-ar="آراء" data-en="Voices">آراء</a></li>
         </ul>
-        <a href="#cta" class="nav-shop">Shop Now <i class="fa-regular fa-arrow-right" style="font-size:.65rem"></i></a>
+        <div style="display:flex;align-items:center;gap:12px;">
+            <button id="lang-toggle" class="lang-toggle" data-current="ar"
+                title="Switch language / تغيير اللغة">EN</button>
+            <a href="#cta" class="nav-shop">
+                <span data-ar="تسوَّق الآن" data-en="Shop Now">تسوَّق الآن</span>
+                <i class="fa-regular fa-arrow-right" style="font-size:.65rem"></i>
+            </a>
+        </div>
     </nav>
 
     <!-- HERO -->
     <section id="hero" class="hero">
         <div class="hero-left">
-            <div class="hero-kicker">Luxury Perfume House</div>
-            <h1 class="hero-h1">
-                Wear the<br>Essence of<br>
-                <em>Luxury.</em>
-            </h1>
-            <div class="hero-tagline">Elegance in Every Drop</div>
-            <p class="hero-desc">Velouré is crafted for those who refuse to blend in. A collection of rare, long-lasting
-                fragrances that embody confidence, elegance, and unforgettable presence.</p>
-
-            <div class="hero-cta-group">
-                <a href="#collection" class="btn-primary">Shop the Collection</a>
-                <a href="#about" class="btn-ghost">Discover the Story</a>
+            <div class="hero-kicker" data-ar="دار العطور الفاخرة" data-en="Luxury Perfume House">دار العطور الفاخرة
             </div>
-
+            <h1 class="hero-h1" data-ar="ارتدِ<br>عبق<br><em>الفخامة.</em>"
+                data-en="Wear the<br>Essence of<br><em>Luxury.</em>">ارتدِ<br>عبق<br><em>الفخامة.</em></h1>
+            <div class="hero-tagline" data-ar="أناقة في كل قطرة" data-en="Elegance in Every Drop">أناقة في كل قطرة</div>
+            <p class="hero-desc"
+                data-ar="صُمِّم فيلوريه لمن يرفضون الاندماج في الزحام. مجموعة من العطور النادرة طويلة الأمد التي تجسّد الثقة والأناقة والحضور الذي لا يُنسى."
+                data-en="Velouré is crafted for those who refuse to blend in. A collection of rare, long-lasting fragrances that embody confidence, elegance, and unforgettable presence.">
+                صُمِّم فيلوريه لمن يرفضون الاندماج في الزحام. مجموعة من العطور النادرة طويلة الأمد التي تجسّد الثقة
+                والأناقة والحضور الذي لا يُنسى.</p>
+            <div class="hero-cta-group">
+                <a href="#collection" class="btn-primary" data-ar="تسوَّق المجموعة" data-en="Shop the Collection">تسوَّق
+                    المجموعة</a>
+                <a href="#about" class="btn-ghost" data-ar="اكتشف القصة" data-en="Discover the Story">اكتشف القصة</a>
+            </div>
             <div class="hero-meta">
-                <span><i class="fa-regular fa-gem"></i>Premium Ingredients</span>
-                <span><i class="fa-regular fa-clock"></i>Long-Lasting Wear</span>
-                <span><i class="fa-regular fa-star"></i>Signature Identity</span>
+                <span><i class="fa-regular fa-gem"></i><span data-ar="مكونات فاخرة" data-en="Premium Ingredients">مكونات
+                        فاخرة</span></span>
+                <span><i class="fa-regular fa-clock"></i><span data-ar="ثبات طويل الأمد"
+                        data-en="Long-Lasting Wear">ثبات طويل الأمد</span></span>
+                <span><i class="fa-regular fa-star"></i><span data-ar="هوية مميزة" data-en="Signature Identity">هوية
+                        مميزة</span></span>
             </div>
         </div>
-
         <div class="hero-right">
             <div class="bottle-card">
-                <div class="bottle-badge">New Collection 2026</div>
-
+                <div class="bottle-badge" data-ar="مجموعة 2026 الجديدة" data-en="New Collection 2026">مجموعة 2026
+                    الجديدة</div>
                 <div class="bottle-wrap">
                     <div class="bottle-cap"></div>
                     <div class="bottle-neck"></div>
@@ -66,23 +75,22 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="bc-name">Velouré Noir</div>
-                <div class="bc-mood">Deep. Bold. Mysterious.</div>
-
-                <div class="bc-notes">
-                    <strong>Top:</strong> Bergamot, Blackcurrant<br>
-                    <strong>Heart:</strong> Rose, Patchouli<br>
-                    <strong>Base:</strong> Oud, Amber, Vanilla
+                <div class="bc-name" data-ar="فيلوريه نوار" data-en="Velouré Noir">فيلوريه نوار</div>
+                <div class="bc-mood" data-ar="عميق. جريء. غامض." data-en="Deep. Bold. Mysterious.">عميق. جريء. غامض.
                 </div>
-
+                <div class="bc-notes">
+                    <strong data-ar="القمة:" data-en="Top:">القمة:</strong> Bergamot, Blackcurrant<br>
+                    <strong data-ar="القلب:" data-en="Heart:">القلب:</strong> Rose, Patchouli<br>
+                    <strong data-ar="القاعدة:" data-en="Base:">القاعدة:</strong> Oud, Amber, Vanilla
+                </div>
                 <div class="bc-price">
                     <div>
-                        <div class="bc-price-label">From</div>
+                        <div class="bc-price-label" data-ar="يبدأ من" data-en="From">يبدأ من</div>
                         <div class="bc-price-val">$149</div>
                     </div>
                     <a href="#collection" class="btn-primary"
-                        style="font-size:.65rem;padding:10px 18px;letter-spacing:.18em">Explore</a>
+                        style="font-size:.65rem;padding:10px 18px;letter-spacing:.18em" data-ar="استكشف"
+                        data-en="Explore">استكشف</a>
                 </div>
             </div>
         </div>
@@ -93,29 +101,42 @@
         <div class="container">
             <div class="about-grid">
                 <div class="reveal">
-                    <div class="s-kicker">About the Brand</div>
-                    <h2 class="s-heading">A Story of<br><em>Timeless Luxury</em></h2>
-                    <p class="s-sub">Velouré is more than a fragrance — it is an intimate expression of identity. Each
-                        scent is composed with rare ingredients and meticulous artistry, designed to leave a trail of
-                        elegance wherever you go.</p>
-                    <p style="margin-top:20px;font-size:.9rem;font-weight:300;color:var(--ink-3);line-height:1.85">Our
-                        vision is to become a globally recognized luxury perfume house that defines modern elegance and
-                        emotional connection through scent. Every bottle is a promise of presence, confidence, and
-                        distinction.</p>
+                    <div class="s-kicker" data-ar="عن العلامة التجارية" data-en="About the Brand">عن العلامة التجارية
+                    </div>
+                    <h2 class="s-heading" data-ar="قصة من<br><em>الفخامة الخالدة</em>"
+                        data-en="A Story of<br><em>Timeless Luxury</em>">قصة من<br><em>الفخامة الخالدة</em></h2>
+                    <p class="s-sub"
+                        data-ar="فيلوريه أكثر من مجرد عطر — إنه تعبير حميم عن الهوية. تتكون كل رائحة من مكونات نادرة وفن متأنٍّ، مصممة لتترك أثراً من الأناقة أينما ذهبت."
+                        data-en="Velouré is more than a fragrance — it is an intimate expression of identity. Each scent is composed with rare ingredients and meticulous artistry, designed to leave a trail of elegance wherever you go.">
+                        فيلوريه أكثر من مجرد عطر — إنه تعبير حميم عن الهوية. تتكون كل رائحة من مكونات نادرة وفن متأنٍّ،
+                        مصممة لتترك أثراً من الأناقة أينما ذهبت.</p>
+                    <p style="margin-top:20px;font-size:.9rem;font-weight:300;color:var(--ink-3);line-height:1.85"
+                        data-ar="رؤيتنا أن نصبح دار عطور فاخرة معترفاً بها عالمياً تحدد الأناقة العصرية والتواصل العاطفي من خلال العطر. كل زجاجة هي وعد بالحضور والثقة والتميز."
+                        data-en="Our vision is to become a globally recognized luxury perfume house that defines modern elegance and emotional connection through scent. Every bottle is a promise of presence, confidence, and distinction.">
+                        رؤيتنا أن نصبح دار عطور فاخرة معترفاً بها عالمياً تحدد الأناقة العصرية والتواصل العاطفي من خلال
+                        العطر. كل زجاجة هي وعد بالحضور والثقة والتميز.</p>
                 </div>
                 <div class="reveal d1">
                     <div class="about-card">
-                        <div class="about-mission">Mission</div>
-                        <h3>Crafted for Presence.</h3>
-                        <p>We create high-quality, long-lasting perfumes using the finest ingredients, delivering a
-                            luxurious sensory experience that reflects individuality and prestige.</p>
+                        <div class="about-mission" data-ar="رسالتنا" data-en="Mission">رسالتنا</div>
+                        <h3 data-ar="مصنوع لأصحاب الحضور." data-en="Crafted for Presence.">مصنوع لأصحاب الحضور.</h3>
+                        <p data-ar="نصنع عطوراً عالية الجودة وطويلة الأمد باستخدام أفضل المكونات، لتقديم تجربة حسية فاخرة تعكس الفردية والمكانة الرفيعة."
+                            data-en="We create high-quality, long-lasting perfumes using the finest ingredients, delivering a luxurious sensory experience that reflects individuality and prestige.">
+                            نصنع عطوراً عالية الجودة وطويلة الأمد باستخدام أفضل المكونات، لتقديم تجربة حسية فاخرة تعكس
+                            الفردية والمكانة الرفيعة.</p>
                         <ul class="about-list">
-                            <li><i class="fa-regular fa-circle-check"></i> Designed for those aged 20–45 who live and
-                                breathe elegance.</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Perfect for professionals, creators, and
-                                luxury lifestyle seekers.</li>
-                            <li><i class="fa-regular fa-circle-check"></i> Built for those who value identity,
-                                uniqueness, and presence.</li>
+                            <li><i class="fa-regular fa-circle-check"></i><span
+                                    data-ar="مصمم لمن تتراوح أعمارهم بين 20-45 ممن يعيشون الأناقة ويتنفسونها."
+                                    data-en="Designed for those aged 20–45 who live and breathe elegance.">مصمم لمن
+                                    تتراوح أعمارهم بين 20-45 ممن يعيشون الأناقة ويتنفسونها.</span></li>
+                            <li><i class="fa-regular fa-circle-check"></i><span
+                                    data-ar="مثالي للمهنيين والمبدعين والباحثين عن أسلوب الحياة الفاخر."
+                                    data-en="Perfect for professionals, creators, and luxury lifestyle seekers.">مثالي
+                                    للمهنيين والمبدعين والباحثين عن أسلوب الحياة الفاخر.</span></li>
+                            <li><i class="fa-regular fa-circle-check"></i><span
+                                    data-ar="مبني لمن يقدرون الهوية والتفرد والحضور."
+                                    data-en="Built for those who value identity, uniqueness, and presence.">مبني لمن
+                                    يقدرون الهوية والتفرد والحضور.</span></li>
                         </ul>
                     </div>
                 </div>
@@ -127,63 +148,83 @@
     <section id="collection">
         <div class="container">
             <div class="reveal">
-                <div class="s-kicker">Our Collection</div>
-                <h2 class="s-heading">Three Scents.<br><em>One Signature World.</em></h2>
-                <p class="s-sub">Each Velouré fragrance evolves on the skin — built on a three-layer structure designed
-                    to linger in memory long after you leave the room.</p>
+                <div class="s-kicker" data-ar="مجموعتنا" data-en="Our Collection">مجموعتنا</div>
+                <h2 class="s-heading" data-ar="ثلاثة عطور.<br><em>عالم واحد فريد.</em>"
+                    data-en="Three Scents.<br><em>One Signature World.</em>">ثلاثة عطور.<br><em>عالم واحد فريد.</em>
+                </h2>
+                <p class="s-sub"
+                    data-ar="كل عطر من فيلوريه يتطور على الجلد — مبني على هيكل ثلاثي الطبقات مصمم ليبقى في الذاكرة طويلاً بعد مغادرتك."
+                    data-en="Each Velouré fragrance evolves on the skin — built on a three-layer structure designed to linger in memory long after you leave the room.">
+                    كل عطر من فيلوريه يتطور على الجلد — مبني على هيكل ثلاثي الطبقات مصمم ليبقى في الذاكرة طويلاً بعد
+                    مغادرتك.</p>
             </div>
         </div>
-
         <div style="max-width:1200px;margin:60px auto 0;padding:0 52px">
             <div class="coll-grid">
+                <!-- Noir -->
                 <div class="coll-card reveal">
                     <div class="coll-line"></div>
-                    <div class="coll-tag">Night Fragrance</div>
-                    <div class="coll-name">Velouré Noir</div>
-                    <div class="coll-mood">Deep, bold, and mysterious. Crafted for evenings, events, and unforgettable
-                        nights.</div>
+                    <div class="coll-tag" data-ar="عطر المساء" data-en="Night Fragrance">عطر المساء</div>
+                    <div class="coll-name" data-ar="فيلوريه نوار" data-en="Velouré Noir">فيلوريه نوار</div>
+                    <div class="coll-mood" data-ar="عميق وجريء وغامض. مصنوع للأمسيات والمناسبات والليالي التي لا تُنسى."
+                        data-en="Deep, bold, and mysterious. Crafted for evenings, events, and unforgettable nights.">
+                        عميق وجريء وغامض. مصنوع للأمسيات والمناسبات والليالي التي لا تُنسى.</div>
                     <div class="notes-block">
-                        <div class="note-row"><span class="note-type">Top</span>Bergamot, Blackcurrant</div>
-                        <div class="note-row"><span class="note-type">Heart</span>Rose, Patchouli</div>
-                        <div class="note-row"><span class="note-type">Base</span>Oud, Amber, Vanilla</div>
+                        <div class="note-row"><span class="note-type" data-ar="القمة"
+                                data-en="Top">القمة</span>Bergamot, Blackcurrant</div>
+                        <div class="note-row"><span class="note-type" data-ar="القلب" data-en="Heart">القلب</span>Rose,
+                            Patchouli</div>
+                        <div class="note-row"><span class="note-type" data-ar="القاعدة"
+                                data-en="Base">القاعدة</span>Oud, Amber, Vanilla</div>
                     </div>
                     <div class="coll-ft">
-                        <div>Intensity: <span class="coll-intensity">High</span></div>
-                        <div>Signature Night</div>
+                        <div><span data-ar="الكثافة: " data-en="Intensity: ">الكثافة: </span><span
+                                class="coll-intensity" data-ar="عالية" data-en="High">عالية</span></div>
+                        <div data-ar="ليلة مميزة" data-en="Signature Night">ليلة مميزة</div>
                     </div>
                 </div>
-
+                <!-- Lumière -->
                 <div class="coll-card reveal d1">
                     <div class="coll-line"></div>
-                    <div class="coll-tag">Day Fragrance</div>
-                    <div class="coll-name">Velouré Lumière</div>
-                    <div class="coll-mood">Fresh, radiant, elegant. Ideal for daytime, work, and effortless
-                        sophistication.</div>
+                    <div class="coll-tag" data-ar="عطر النهار" data-en="Day Fragrance">عطر النهار</div>
+                    <div class="coll-name" data-ar="فيلوريه لوميير" data-en="Velouré Lumière">فيلوريه لوميير</div>
+                    <div class="coll-mood" data-ar="منعش ومشرق وأنيق. مثالي للنهار والعمل والتطور العفوي."
+                        data-en="Fresh, radiant, elegant. Ideal for daytime, work, and effortless sophistication.">منعش
+                        ومشرق وأنيق. مثالي للنهار والعمل والتطور العفوي.</div>
                     <div class="notes-block">
-                        <div class="note-row"><span class="note-type">Top</span>Citrus, Neroli</div>
-                        <div class="note-row"><span class="note-type">Heart</span>Jasmine, White Florals</div>
-                        <div class="note-row"><span class="note-type">Base</span>Musk, Soft Woods</div>
+                        <div class="note-row"><span class="note-type" data-ar="القمة" data-en="Top">القمة</span>Citrus,
+                            Neroli</div>
+                        <div class="note-row"><span class="note-type" data-ar="القلب"
+                                data-en="Heart">القلب</span>Jasmine, White Florals</div>
+                        <div class="note-row"><span class="note-type" data-ar="القاعدة"
+                                data-en="Base">القاعدة</span>Musk, Soft Woods</div>
                     </div>
                     <div class="coll-ft">
-                        <div>Intensity: <span class="coll-intensity">Medium</span></div>
-                        <div>Everyday Luxury</div>
+                        <div><span data-ar="الكثافة: " data-en="Intensity: ">الكثافة: </span><span
+                                class="coll-intensity" data-ar="متوسطة" data-en="Medium">متوسطة</span></div>
+                        <div data-ar="فخامة يومية" data-en="Everyday Luxury">فخامة يومية</div>
                     </div>
                 </div>
-
+                <!-- Royale -->
                 <div class="coll-card reveal d2">
                     <div class="coll-line"></div>
-                    <div class="coll-tag">Signature Scent</div>
-                    <div class="coll-name">Velouré Royale</div>
-                    <div class="coll-mood">Rich, warm, luxurious. A statement fragrance that defines your presence.
-                    </div>
+                    <div class="coll-tag" data-ar="العطر المميز" data-en="Signature Scent">العطر المميز</div>
+                    <div class="coll-name" data-ar="فيلوريه رويال" data-en="Velouré Royale">فيلوريه رويال</div>
+                    <div class="coll-mood" data-ar="غني ودافئ وفاخر. عطر يصنع تصريحاً ويحدد حضورك."
+                        data-en="Rich, warm, luxurious. A statement fragrance that defines your presence.">غني ودافئ
+                        وفاخر. عطر يصنع تصريحاً ويحدد حضورك.</div>
                     <div class="notes-block">
-                        <div class="note-row"><span class="note-type">Top</span>Saffron, Spices</div>
-                        <div class="note-row"><span class="note-type">Heart</span>Rose, Amber</div>
-                        <div class="note-row"><span class="note-type">Base</span>Oud, Vanilla, Sandalwood</div>
+                        <div class="note-row"><span class="note-type" data-ar="القمة" data-en="Top">القمة</span>Saffron,
+                            Spices</div>
+                        <div class="note-row"><span class="note-type" data-ar="القلب" data-en="Heart">القلب</span>Rose,
+                            Amber</div>
+                        <div class="note-row"><span class="note-type" data-ar="القاعدة"
+                                data-en="Base">القاعدة</span>Oud, Vanilla, Sandalwood</div>
                     </div>
                     <div class="coll-ft">
-                        <div>Intensity: <span class="coll-intensity">Very High</span></div>
-                        <div>Iconic Presence</div>
+                        <div><span data-ar="الكثافة: " data-en="Intensity: ">الكثافة: </span><span
+                                class="coll-intensity" data-ar="عالية جداً" data-en="Very High">عالية جداً</span></div>
+                        <div data-ar="حضور أسطوري" data-en="Iconic Presence">حضور أسطوري</div>
                     </div>
                 </div>
             </div>
@@ -194,59 +235,71 @@
     <section id="why" class="why-section">
         <div class="container">
             <div class="reveal">
-                <div class="s-kicker">Why Choose Velouré</div>
-                <h2 class="s-heading">Luxury You<br>Can <em>Feel.</em></h2>
+                <div class="s-kicker" data-ar="لماذا تختار فيلوريه" data-en="Why Choose Velouré">لماذا تختار فيلوريه
+                </div>
+                <h2 class="s-heading" data-ar="فخامة<br>تشعر بها <em>حقاً.</em>"
+                    data-en="Luxury You<br>Can <em>Feel.</em>">فخامة<br>تشعر بها <em>حقاً.</em></h2>
             </div>
-
             <div class="why-grid">
                 <div class="reveal d1">
-                    <p class="s-sub">Every detail — from the first spritz to the final dry-down — is designed to feel
-                        intentional, refined, and deeply personal.</p>
+                    <p class="s-sub"
+                        data-ar="كل تفصيل — من أول رشة حتى النفحة الأخيرة — مصمم ليكون مقصوداً ومرهفاً وشخصياً عميقاً."
+                        data-en="Every detail — from the first spritz to the final dry-down — is designed to feel intentional, refined, and deeply personal.">
+                        كل تفصيل — من أول رشة حتى النفحة الأخيرة — مصمم ليكون مقصوداً ومرهفاً وشخصياً عميقاً.</p>
                     <div
                         style="margin-top:36px;padding:28px 24px;background:var(--white);border:1px solid var(--gold-brd)">
                         <div
                             style="font-family:var(--display);font-size:3rem;font-weight:300;color:var(--gold-2);line-height:1;margin-bottom:6px">
                             98%</div>
-                        <div
-                            style="font-size:.75rem;font-weight:400;text-transform:uppercase;letter-spacing:.2em;color:var(--ink-3)">
-                            Customer Satisfaction Rate</div>
+                        <div style="font-size:.75rem;font-weight:400;text-transform:uppercase;letter-spacing:.2em;color:var(--ink-3)"
+                            data-ar="معدل رضا العملاء" data-en="Customer Satisfaction Rate">معدل رضا العملاء</div>
                     </div>
                 </div>
-
                 <div class="why-list reveal d2">
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-hourglass-half"></i></div>
                         <div>
-                            <div class="why-title">Long-Lasting Sillage</div>
-                            <div class="why-text">Crafted with high-concentration oils, ensuring your presence lingers
-                                from morning to night without ever feeling overpowering.</div>
+                            <div class="why-title" data-ar="أثر عطري طويل الأمد" data-en="Long-Lasting Sillage">أثر عطري
+                                طويل الأمد</div>
+                            <div class="why-text"
+                                data-ar="مصنوع بزيوت عالية التركيز، يضمن بقاء حضورك من الصباح حتى المساء دون أن يكون طاغياً."
+                                data-en="Crafted with high-concentration oils, ensuring your presence lingers from morning to night without ever feeling overpowering.">
+                                مصنوع بزيوت عالية التركيز، يضمن بقاء حضورك من الصباح حتى المساء دون أن يكون طاغياً.
+                            </div>
                         </div>
                     </div>
-
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-flask"></i></div>
                         <div>
-                            <div class="why-title">Premium Ingredients</div>
-                            <div class="why-text">Rare, high-quality sources from around the world — blended with
-                                precision to create complex, evolving scents that unfold on the skin.</div>
+                            <div class="why-title" data-ar="مكونات فاخرة" data-en="Premium Ingredients">مكونات فاخرة
+                            </div>
+                            <div class="why-text"
+                                data-ar="مصادر نادرة وعالية الجودة من أنحاء العالم — ممزوجة بدقة لخلق روائح معقدة ومتطورة تتكشف على الجلد."
+                                data-en="Rare, high-quality sources from around the world — blended with precision to create complex, evolving scents that unfold on the skin.">
+                                مصادر نادرة وعالية الجودة من أنحاء العالم — ممزوجة بدقة لخلق روائح معقدة ومتطورة تتكشف
+                                على الجلد.</div>
                         </div>
                     </div>
-
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-box-open"></i></div>
                         <div>
-                            <div class="why-title">Elegant Packaging</div>
-                            <div class="why-text">Minimal French-inspired design in black, gold, and white. Each bottle
-                                is a collectible object of art in its own right.</div>
+                            <div class="why-title" data-ar="تغليف أنيق" data-en="Elegant Packaging">تغليف أنيق</div>
+                            <div class="why-text"
+                                data-ar="تصميم فرنسي مينيمالي بالأسود والذهبي والأبيض. كل زجاجة هي قطعة فنية تحفظ لنفسها."
+                                data-en="Minimal French-inspired design in black, gold, and white. Each bottle is a collectible object of art in its own right.">
+                                تصميم فرنسي مينيمالي بالأسود والذهبي والأبيض. كل زجاجة هي قطعة فنية تحفظ لنفسها.</div>
                         </div>
                     </div>
-
                     <div class="why-item">
                         <div class="why-icon"><i class="fa-solid fa-user"></i></div>
                         <div>
-                            <div class="why-title">Designed for Identity</div>
-                            <div class="why-text">Built for individuals who want their fragrance to speak before they do
-                                — subtle, powerful, and unmistakably theirs.</div>
+                            <div class="why-title" data-ar="مصمم للهوية" data-en="Designed for Identity">مصمم للهوية
+                            </div>
+                            <div class="why-text"
+                                data-ar="مبني للأفراد الذين يريدون لعطرهم أن يتكلم قبلهم — رفيع وقوي ولا يمكن الخلط بينه وبين غيره."
+                                data-en="Built for individuals who want their fragrance to speak before they do — subtle, powerful, and unmistakably theirs.">
+                                مبني للأفراد الذين يريدون لعطرهم أن يتكلم قبلهم — رفيع وقوي ولا يمكن الخلط بينه وبين
+                                غيره.</div>
                         </div>
                     </div>
                 </div>
@@ -258,60 +311,67 @@
     <section id="testimonials">
         <div class="container">
             <div class="reveal">
-                <div class="s-kicker">Testimonials</div>
-                <h2 class="s-heading">Loved by Those<br>Who <em>Lead the Room.</em></h2>
-                <p class="s-sub">From professionals to creators and tastemakers, Velouré has become a quiet signature in
-                    lives that value presence.</p>
+                <div class="s-kicker" data-ar="آراء عملائنا" data-en="Testimonials">آراء عملائنا</div>
+                <h2 class="s-heading" data-ar="محبوب من<br>أصحاب <em>الحضور الطاغي.</em>"
+                    data-en="Loved by Those<br>Who <em>Lead the Room.</em>">محبوب من<br>أصحاب <em>الحضور الطاغي.</em>
+                </h2>
+                <p class="s-sub"
+                    data-ar="من المهنيين إلى المبدعين وصانعي الأذواق، أصبح فيلوريه توقيعاً هادئاً في حياة تُقدّر الحضور."
+                    data-en="From professionals to creators and tastemakers, Velouré has become a quiet signature in lives that value presence.">
+                    من المهنيين إلى المبدعين وصانعي الأذواق، أصبح فيلوريه توقيعاً هادئاً في حياة تُقدّر الحضور.</p>
             </div>
-
             <div class="test-grid">
                 <div class="test-card reveal">
-                    <div class="test-stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    <div class="test-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                             class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <p class="test-quote">"Velouré Noir has become my evening ritual. I receive compliments every single
-                        time I wear it — it's the most-asked-about thing I own."</p>
+                            class="fa-solid fa-star-half-stroke"></i></div>
+                    <p class="test-quote"
+                        data-ar="«أصبح فيلوريه نوار طقسي المسائي. أتلقى إطراءات في كل مرة أرتديه — إنه الشيء الأكثر تساؤلاً عنه بين كل ما أملكه.»"
+                        data-en='"Velouré Noir has become my evening ritual. I receive compliments every single time I wear it — it&apos;s the most-asked-about thing I own."'>
+                        «أصبح فيلوريه نوار طقسي المسائي. أتلقى إطراءات في كل مرة أرتديه — إنه الشيء الأكثر تساؤلاً عنه
+                        بين كل ما أملكه.»</p>
                     <div class="test-attr">
-                        <div class="test-av">A</div>
+                        <div class="test-av">أ</div>
                         <div>
-                            <div class="test-name">Amira K.</div>
-                            <div class="test-role">Creative Director</div>
+                            <div class="test-name" data-ar="أميرة ك." data-en="Amira K.">أميرة ك.</div>
+                            <div class="test-role" data-ar="مديرة إبداعية" data-en="Creative Director">مديرة إبداعية
+                            </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="test-card reveal d1">
-                    <div class="test-stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    <div class="test-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                             class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="test-quote">"Lumière is my daily signature. Clean, sophisticated, and never overpowering —
-                        it's become as much a part of my routine as my morning coffee."</p>
+                            class="fa-solid fa-star"></i></div>
+                    <p class="test-quote"
+                        data-ar="«لوميير هو توقيعي اليومي. نظيف وراقٍ وغير طاغٍ — أصبح جزءاً من روتيني مثل قهوة الصباح تماماً.»"
+                        data-en='"Lumière is my daily signature. Clean, sophisticated, and never overpowering — it&apos;s become as much a part of my routine as my morning coffee."'>
+                        «لوميير هو توقيعي اليومي. نظيف وراقٍ وغير طاغٍ — أصبح جزءاً من روتيني مثل قهوة الصباح تماماً.»
+                    </p>
                     <div class="test-attr">
-                        <div class="test-av">D</div>
+                        <div class="test-av">د</div>
                         <div>
-                            <div class="test-name">Daniel R.</div>
-                            <div class="test-role">Investment Consultant</div>
+                            <div class="test-name" data-ar="دانيال ر." data-en="Daniel R.">دانيال ر.</div>
+                            <div class="test-role" data-ar="مستشار استثمار" data-en="Investment Consultant">مستشار
+                                استثمار</div>
                         </div>
                     </div>
                 </div>
-
                 <div class="test-card reveal d2">
-                    <div class="test-stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    <div class="test-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                             class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="test-quote">"Royale feels like a crown in a bottle. It's the scent I reach for when
-                        everything in the room has to be right — and it never disappoints."</p>
+                            class="fa-solid fa-star"></i></div>
+                    <p class="test-quote"
+                        data-ar="«رويال يشعرني بأنني أحمل تاجاً في زجاجة. إنه العطر الذي أختاره حين يجب أن يكون كل شيء في قمته — ولا يخذلني أبداً.»"
+                        data-en='"Royale feels like a crown in a bottle. It&apos;s the scent I reach for when everything in the room has to be right — and it never disappoints."'>
+                        «رويال يشعرني بأنني أحمل تاجاً في زجاجة. إنه العطر الذي أختاره حين يجب أن يكون كل شيء في قمته —
+                        ولا يخذلني أبداً.»</p>
                     <div class="test-attr">
-                        <div class="test-av">L</div>
+                        <div class="test-av">ل</div>
                         <div>
-                            <div class="test-name">Layla S.</div>
-                            <div class="test-role">Luxury Brand Consultant</div>
+                            <div class="test-name" data-ar="ليلى س." data-en="Layla S.">ليلى س.</div>
+                            <div class="test-role" data-ar="مستشارة علامات تجارية فاخرة"
+                                data-en="Luxury Brand Consultant">مستشارة علامات تجارية فاخرة</div>
                         </div>
                     </div>
                 </div>
@@ -322,13 +382,18 @@
     <!-- CTA -->
     <section id="cta" class="cta-section">
         <div class="cta-inner reveal" style="padding-top:0;padding-bottom:0">
-            <div class="cta-kicker">Discover Your Scent</div>
-            <h2 class="cta-title">Find Your<br><em>Signature.</em></h2>
-            <p class="cta-sub">Whether drawn to deep mystery, radiant freshness, or royal warmth — Velouré has a
-                fragrance that feels unmistakably like you.</p>
+            <div class="cta-kicker" data-ar="اكتشف عطرك" data-en="Discover Your Scent">اكتشف عطرك</div>
+            <h2 class="cta-title" data-ar="اعثر على<br><em>توقيعك.</em>" data-en="Find Your<br><em>Signature.</em>">اعثر
+                على<br><em>توقيعك.</em></h2>
+            <p class="cta-sub"
+                data-ar="سواء كنت تنجذب إلى الغموض العميق أو الانتعاش المشرق أو الدفء الملكي — فيلوريه لديه عطر يشعرك أنه أنت تماماً."
+                data-en="Whether drawn to deep mystery, radiant freshness, or royal warmth — Velouré has a fragrance that feels unmistakably like you.">
+                سواء كنت تنجذب إلى الغموض العميق أو الانتعاش المشرق أو الدفء الملكي — فيلوريه لديه عطر يشعرك أنه أنت
+                تماماً.</p>
             <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
-                <a href="#collection" class="btn-cta-primary">Explore the Collection</a>
-                <a href="#about" class="btn-cta-ghost">Learn the Story</a>
+                <a href="#collection" class="btn-cta-primary" data-ar="استكشف المجموعة"
+                    data-en="Explore the Collection">استكشف المجموعة</a>
+                <a href="#about" class="btn-cta-ghost" data-ar="اعرف القصة" data-en="Learn the Story">اعرف القصة</a>
             </div>
         </div>
     </section>
@@ -337,12 +402,13 @@
     <footer>
         <div class="container">
             <div class="ft-inner">
-                <a href="#hero" class="ft-brand">Velour<em>é</em></a>
+                <a href="#hero" class="ft-brand" data-ar="فيلور<em>يه</em>"
+                    data-en="Velour<em>é</em>">فيلور<em>يه</em></a>
                 <div class="ft-links">
-                    <a href="#about">About</a>
-                    <a href="#collection">Collection</a>
-                    <a href="#why">Why Us</a>
-                    <a href="#testimonials">Voices</a>
+                    <a href="#about" data-ar="العلامة" data-en="About">العلامة</a>
+                    <a href="#collection" data-ar="المجموعة" data-en="Collection">المجموعة</a>
+                    <a href="#why" data-ar="لماذا نحن" data-en="Why Us">لماذا نحن</a>
+                    <a href="#testimonials" data-ar="آراء" data-en="Voices">آراء</a>
                 </div>
                 <div class="ft-social">
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -350,7 +416,11 @@
                     <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
                 </div>
             </div>
-            <div class="ft-copy">© <span id="year"></span> Velouré. All rights reserved. Wear the essence of luxury.
+            <div class="ft-copy">
+                © <span id="year"></span>
+                <span data-ar="فيلوريه. جميع الحقوق محفوظة. ارتدِ عبق الفخامة."
+                    data-en="Velouré. All rights reserved. Wear the essence of luxury.">فيلوريه. جميع الحقوق محفوظة.
+                    ارتدِ عبق الفخامة.</span>
             </div>
         </div>
     </footer>
